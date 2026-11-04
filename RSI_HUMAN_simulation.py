@@ -30,6 +30,7 @@ plafond_elec = 5 / 100  # Maximum share of global electricity humans leave to AI
 yc = []
 yr = []
 
+
 # Initialization of populations and parameters
 ameliorationP = True
 amelioration = False
