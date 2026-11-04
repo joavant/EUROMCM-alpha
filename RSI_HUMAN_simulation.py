@@ -74,7 +74,7 @@ for t in range(1, epoch + 1):
         consoIA = max(consoIA / 2, consoIA_min)  # Same cost for twice the power, until physical limit
         RSI = min(RSI, consomaxRSI / consoIA)  # RSI can never exceed what dedicated energy allows, and drops if dedicated energy drops
 
-    if t <= 4:  # Jojo's Moore law for P
+    if t <= 4:  # Moore law for P during 4 years
         P = 1.5 / 100 * (3 / 1.5) ** ((t - 1) / 3)
 
     if RSI <= seuil and ameliorationP:
